@@ -1,0 +1,711 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+  <link rel="icon" href="{% static 'image/logo-3.png' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4c729db828.js" crossorigin="anonymous"></script>
+  <title>Tour Packages</title>
+  <style>
+    .home {
+      width: 100%;
+      height: 90vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),url('{% static "image/packages_background_img1.jpg" %}');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sticky-header">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h2 class="heading-logo"><span>T</span>T</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/home/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/book/">Book with <span>T</span>T</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                FAQ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Company</a></li>
+                <li><a class="dropdown-item" href="#services">Experience</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="home">
+    <div class="content">
+      <h5>Welcome To Packages</h5>
+      <h1>Visit <span class="changecontent"></span></h1>
+      <p>Travel is the only thing you buy that makes you richer.</p>
+      <a href="/bookslot/">Book Place</a>
+    </div>
+  </div>
+
+  <!--packages start-->
+  <section class="packages" id="packages">
+    <h4 class="heading_sm">packages</h4>
+    <h2 class="heading_lg"><span>T</span>ours & Tarvel packages</h2>
+
+    <div class="container-packages">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 my-2">
+            <div class="content-packages">
+
+              <div class="img-package">
+                <img src="{% static 'image/GOA.png' %}" class="image-package" alt="">
+
+              </div>
+
+              <div class="content-package-container">
+
+                <div class="details-package">
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-location-dot"></i></span>GOA
+                  </p>
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>7
+                    Days & 6 Night</p>
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6 persons</p>
+                </div>
+
+                <h4 class="heading-content-package">"Experience the vibrant rhythms of Goa, where sun-kissed beaches and
+                  lively culture await."</h4>
+
+                <hr>
+                <div class="rating">
+                  <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.9/5</p>
+                  <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 8,500 per person</h4>
+
+                  <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 my-2">
+            <div class="content-packages">
+
+              <div class="img-package">
+                <img src="{% static 'image/Chikmagalur.jpg' %}" class="image-package" alt="">
+
+              </div>
+
+              <div class="content-package-container">
+
+                <div class="details-package">
+                  <p class="detail-text"><span class="icon-detail"><i
+                        class="fa-solid fa-location-dot"></i></span>Chikmagalur
+                  </p>
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>3
+                    Days & 2 Night</p>
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>4 person</p>
+                </div>
+
+                <h4 class="heading-content-package">"Discover the serene beauty of Chikmagalur, where lush coffee
+                  plantations and misty hills create an enchanting escape."</h4>
+
+                <hr>
+                <div class="rating">
+                  <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.5/5</p>
+                  <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 4500 per person</h4>
+
+                  <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-2">
+            <div class="content-packages">
+
+              <div class="img-package">
+                <img src="{% static 'image/delhi.jpg' %}" class="image-package" alt="">
+              </div>
+
+              <div class="content-package-container">
+
+                <div class="details-package">
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-location-dot"></i></span>Delhi
+                  </p>
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>4
+                    Days & 3 Night</p>
+                  <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6 persons</p>
+                </div>
+
+                <h4 class="heading-content-package">"Experience the heart of India in Delhi, where history, culture, and
+                  modernity intertwine seamlessly."</h4>
+
+                <hr>
+                <div class="rating">
+                  <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.2/5</p>
+                  <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 2500 per person</h4>
+
+                  <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--packages start-->
+    <section class="packages" id="package">
+
+      <div class="container-packages">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 my-2">
+              <div class="content-packages">
+
+                <div class="img-package">
+                  <img src="{% static 'image/Gokarna.jpg' %}" class="image-package" alt="">
+
+                </div>
+
+                <div class="content-package-container">
+
+                  <div class="details-package">
+                    <p class="detail-text"><span class="icon-detail"><i
+                          class="fa-solid fa-location-dot"></i></span>Gokarna
+                    </p>
+                    <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>3
+                      Days & 2 Night</p>
+                    <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6 persons
+                    </p>
+                  </div>
+
+                  <h4 class="heading-content-package">Embark on a coastal escape to Gokarna, where pristine beaches and
+                    spiritual serenity await."</h4>
+
+                  <hr>
+                  <div class="rating">
+                    <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.9/5</p>
+                    <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 8,500</h4>
+
+                    <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+
+                  </div>
+
+
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 my-2">
+              <div class="content-packages">
+
+                <div class="img-package">
+                  <img src="{% static 'image/Himachal%20Pradesh.jpg' %}" class="image-package" alt="">
+
+                </div>
+
+                <div class="content-package-container">
+
+                  <div class="details-package">
+                    <p class="detail-text"><span class="icon-detail"><i
+                          class="fa-solid fa-location-dot"></i></span>Himachal Pradesh
+                    </p>
+                    <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>5
+                      Days & 4 Night</p>
+                    <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>4 person
+                    </p>
+                  </div>
+
+                  <h4 class="heading-content-package">
+                    "Discover the majestic beauty of Himachal Pradesh, where snow-capped peaks and lush valleys await
+                    your exploration."</h4>
+
+                  <hr>
+                  <div class="rating">
+                    <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.8/5</p>
+                    <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 3500 per person</h4>
+
+                    <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                  </div>
+
+
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 my-2">
+              <div class="content-packages">
+
+                <div class="img-package">
+                  <img src="{% static 'image/kerala.jpg' %}" class="image-package" alt="">
+
+                </div>
+
+                <div class="content-package-container">
+
+                  <div class="details-package">
+                    <p class="detail-text"><span class="icon-detail"><i
+                          class="fa-solid fa-location-dot"></i></span>kerala
+                    </p>
+                    <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>4
+                      Days & 3 Night</p>
+                    <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6 persons
+                    </p>
+                  </div>
+
+                  <h4 class="heading-content-package">
+                    "Explore the enchanting backwaters and lush landscapes of Kerala, where every moment is a tranquil
+                    escape."</h4>
+
+                  <hr>
+                  <div class="rating">
+                    <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.5/5</p>
+                    <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 2500 per person</h4>
+
+                    <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                  </div>
+
+
+
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--packages start-->
+      <section class="packages" id="package">
+
+        <div class="container-packages">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 my-2">
+                <div class="content-packages">
+
+                  <div class="img-package">
+                    <img src="{% static 'image/Munnar.jpg' %}" class="image-package" alt="">
+
+                  </div>
+
+                  <div class="content-package-container">
+
+                    <div class="details-package">
+                      <p class="detail-text"><span class="icon-detail"><i
+                            class="fa-solid fa-location-dot"></i></span>Munnar
+                      </p>
+                      <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>3
+                        Days & 2 Night</p>
+                      <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6 persons
+                      </p>
+                    </div>
+
+                    <h4 class="heading-content-package">"Escape to the serene hills of Munnar, where misty mornings and
+                      lush tea plantations create a timeless retreat."</h4>
+
+                    <hr>
+                    <div class="rating">
+                      <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.9/5</p>
+                      <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 2,500 per person</h4>
+
+                      <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+
+                    </div>
+
+
+
+                  </div>
+
+
+                </div>
+
+              </div>
+
+
+              <div class="col-lg-4 col-md-6 my-2">
+                <div class="content-packages">
+
+                  <div class="img-package">
+                    <img src="{% static 'image/mysore.jpg' %}" class="image-package" alt="">
+
+                  </div>
+
+                  <div class="content-package-container">
+
+                    <div class="details-package">
+                      <p class="detail-text"><span class="icon-detail"><i
+                            class="fa-solid fa-location-dot"></i></span>Mysore
+                      </p>
+                      <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>4
+                        Days & 3 Night</p>
+                      <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>4 person
+                      </p>
+                    </div>
+
+                    <h4 class="heading-content-package">"Experience the royal grandeur of Mysore, where history,
+                      culture, and architectural marvels await around every corner."</h4>
+
+                    <hr>
+                    <div class="rating">
+                      <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.5/5</p>
+                      <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 3500 per person</h4>
+
+                      <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                    </div>
+
+
+
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 my-2">
+                <div class="content-packages">
+
+                  <div class="img-package">
+                    <img src="{% static 'image/Northeast.jpg' %}" class="image-package" alt="">
+
+                  </div>
+
+                  <div class="content-package-container">
+
+                    <div class="details-package">
+                      <p class="detail-text"><span class="icon-detail"><i
+                            class="fa-solid fa-location-dot"></i></span>Northeast
+                      </p>
+                      <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-calendar-days"></i></span>3
+                        Days & 2 Night</p>
+                      <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6 persons
+                      </p>
+                    </div>
+
+                    <h4 class="heading-content-package">"Embark on a journey to Northeast India, where unspoiled nature,
+                      diverse cultures, and adventure beckon at every turn."</h4>
+
+                    <hr>
+                    <div class="rating">
+                      <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.2/5</p>
+                      <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 2500 per person</h4>
+
+                      <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                    </div>
+
+
+
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <section class="packages" id="package">
+
+          <div class="container-packages">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 my-2">
+                  <div class="content-packages">
+
+                    <div class="img-package">
+                      <img src="{% static 'image/Varkala.png' %}" class="image-package" alt="">
+
+                    </div>
+
+                    <div class="content-package-container">
+
+                      <div class="details-package">
+                        <p class="detail-text"><span class="icon-detail"><i
+                              class="fa-solid fa-location-dot"></i></span>Varkala
+                        </p>
+                        <p class="detail-text"><span class="icon-detail"><i
+                              class="fa-solid fa-calendar-days"></i></span>4
+                          Days & 3 Night</p>
+                        <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6
+                          persons</p>
+                      </div>
+
+                      <h4 class="heading-content-package">"Indulge in the laid-back charm of Varkala, where golden
+                        cliffs, pristine beaches, and spiritual vibes create a serene coastal haven."
+                      </h4>
+
+                      <hr>
+                      <div class="rating">
+                        <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.9/5</p>
+                        <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 4,500 per person</h4>
+
+                        <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+
+                      </div>
+
+
+
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 my-2">
+                  <div class="content-packages">
+
+                    <div class="img-package">
+                      <img src="{% static 'image/pondicherry.jpg' %}" class="image-package" alt="">
+
+                    </div>
+
+                    <div class="content-package-container">
+
+                      <div class="details-package">
+                        <p class="detail-text"><span class="icon-detail"><i
+                              class="fa-solid fa-location-dot"></i></span>Pondicherry
+                        </p>
+                        <p class="detail-text"><span class="icon-detail"><i
+                              class="fa-solid fa-calendar-days"></i></span>3
+                          Days & 2 Night</p>
+                        <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>4
+                          person</p>
+                      </div>
+
+                      <h4 class="heading-content-package">"Step into the French Riviera of the East in Pondicherry,
+                        where colonial architecture, vibrant culture, and tranquil beaches await."</h4>
+
+                      <hr>
+                      <div class="rating">
+                        <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.5/5</p>
+                        <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 2000 per person</h4>
+
+                        <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                      </div>
+
+
+
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-2">
+                  <div class="content-packages">
+
+                    <div class="img-package">
+                      <img src="{% static 'image/Ooty.jpg' %}" class="image-package" alt="">
+
+                    </div>
+
+                    <div class="content-package-container">
+
+                      <div class="details-package">
+                        <p class="detail-text"><span class="icon-detail"><i
+                              class="fa-solid fa-location-dot"></i></span>Ooty
+                        </p>
+                        <p class="detail-text"><span class="icon-detail"><i
+                              class="fa-solid fa-calendar-days"></i></span>4
+                          Days & 3 Night</p>
+                        <p class="detail-text"><span class="icon-detail"><i class="fa-solid fa-users"></i></span>6
+                          persons</p>
+                      </div>
+
+                      <h4 class="heading-content-package">"Escape to the scenic paradise of Ooty, where misty mountains,
+                        emerald tea gardens, and serene lakes await your discovery."</h4>
+
+                      <hr>
+                      <div class="rating">
+                        <p class="rate"><span class="starns"><i class="fa-regular fa-star"></i></span>4.2/5</p>
+                        <h4 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 2500 per person</h4>
+
+                        <!-- <button class="btn btn-primary"><i class="fa-solid fa-shopping-cart"></i></button> -->
+                      </div>
+
+
+
+                    </div>
+
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <footer>
+            <div class="footer-container" id="contact">
+              <div class="contanier">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <img src="{% static 'image/logo-1.png' %}" class="footer-logo" alt="..." width="150px" height="150px">
+                    <p class="footer-para">"Elevate your adventure with our Trekking Tales – Where Every Step Unfolds a
+                      New Story!"</p>
+
+                    <h5 class="heading-sm-footer">FOLLOW US</h5>
+
+                    <div class="social-links-footer">
+                      <i class="fa-brands icon-social-footer fa-instagram"></i>
+                      <i class="fa-brands icon-social-footer fa-youtube"></i>
+                      <i class="fa-brands icon-social-footer fa-whatsapp"></i>
+                      <i class="fa-brands icon-social-footer fa-linkedin"></i>
+                      <i class="fa-brands icon-social-footer fa-snapchat"></i>
+                    </div>
+
+
+
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="pages-footers">
+                      <h3 class="heading-pages">Pages links</h3>
+                      <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link footer-links  " aria-current="page" href="/home/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link footer-links " href="/book/">Book with <span>T</span>T</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link footer-links " href="/home/">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link footer-links " href="/services/">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link footer-links " href="#package">Packages</a>
+                        <li class="nav-item">
+                          <a class="nav-link footer-links " href="#">Cart</a>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle footer-links " href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            FAQ
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/home/">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Company</a></li>
+                            <li><a class="dropdown-item" href="/travelguide/">Experience</a></li>
+                          </ul>
+                        <li class="nav-item ">
+                          <a class="nav-link footer-links" href="#">Contact Us</a>
+                        </li>
+                        </li>
+                      </ul>
+                    </div>
+
+
+
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <h3 class="heading-pages">Contact Us</h3>
+
+                    <p class="contact-footer">
+                      <span class="text-contact"><i class="fa-solid footer-icons fa-location-dot"></i>12th main Road
+                        Villivakkam, Chennai</span>
+                      <span class="text-contact"><i
+                          class="fa-solid footer-icons fa-envelope"></i>williamtravel14@gmail.com</span>
+                      <span class="text-contact"><i class="fa-solid footer-icons fa-phone"></i>+91-6383397840</span>
+                    </p>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid gx-0">
+              <div class="footer-rights">
+                <p class="right-para"><i class="fa-solid footer-icons fa-copyright"></i>Copyright Trekking Tales. All
+                  Rights Reserved.</p>
+              </div>
+
+            </div>
+
+
+          </footer>
+
+          <!--footer end-->
+
+
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

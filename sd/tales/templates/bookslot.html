@@ -1,0 +1,261 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/stylebook.css' %}">
+  <link rel="icon" href="{% static 'image/logo-3.png' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4c729db828.js" crossorigin="anonymous"></script>
+  <title>Booking</title>
+  <style>
+    .home {
+      width: 100%;
+      height: 90vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+      url('{% static "image/packages_background_img2.jpg" %}');
+      background-repeat: no-repeat;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sticky-header">
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h2 class="heading-logo"><span>T</span>T</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/home/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/book/">Book with <span>T</span>T</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home/">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/home/">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/packages/">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                FAQ
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#about">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Company</a></li>
+                <li><a class="dropdown-item" href="#services">Experience</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="home">
+    <div class="content">
+      <h5>Book your slot with <span>T</span>ales</h5><br>
+      <h1 class="content_visit">Visit <span class="changecontent"></span></h1><br>
+      <p>"Unlock your next adventure with seamless booking, where every click takes you closer to unforgettable
+        experiences."</p>
+      <a href="#book">Slot Book</a>
+    </div>
+  </div>
+
+  <section class="book" id="book">
+    <div class="container">
+      <div class="main-text">
+        <h1><span>T</span>rekking <span>T</span>ales</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="{% static 'image/booking.png' %}" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form method="POST" action="">
+            {% csrf_token %}
+            <div class="mb-3">
+              <input type="text" name="destination" class="form-control" placeholder="Where to go" required>
+            </div>
+            <div class="mb-3">
+              <input type="text" name="duration" class="form-control" placeholder="How Many days" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" name="number_of_members" aria-label="Default select example">
+                <option selected>Number of Members</option>
+                <option value="2 to 4">2 to 4</option>
+                <option value="4 to 6">4 to 6</option>
+                <option value="6 to 10">6 to 10</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <input type="date" class="form-control" name="arrival-date" placeholder="Arrival" required>
+            </div>
+            <div class="mb-3">
+              <input type="date" class="form-control" name="leaving-date" placeholder="Leaving" required>
+            </div>
+            <!-- New fields for phone number and name -->
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" name="phone_number" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary btn-lg" type="submit">Book</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container" id="Contact">
+      <div class="contanier">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <img src="{% static 'image/logo-1.png' %}" class="footer-logo" alt="..." width="150px" height="150px">
+            <p class="footer-para">"Elevate your adventure with our Trekking Tales – Where Every Step Unfolds a New
+              Story!"</p>
+
+            <h5 class="heading-sm-footer">FOLLOW US</h5>
+
+            <div class="social-links-footer">
+              <i class="fa-brands icon-social-footer fa-instagram"></i>
+              <i class="fa-brands icon-social-footer fa-youtube"></i>
+              <i class="fa-brands icon-social-footer fa-whatsapp"></i>
+              <i class="fa-brands icon-social-footer fa-linkedin"></i>
+              <i class="fa-brands icon-social-footer fa-snapchat"></i>
+            </div>
+
+
+
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="pages-footers">
+              <h3 class="heading-pages">Pages links</h3>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link footer-links  " aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link footer-links " href="#book">Book with <span>T</span>T</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link footer-links " href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link footer-links " href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link footer-links " href="#package">Packages</a>
+                <li class="nav-item">
+                  <a class="nav-link footer-links " href="#">Cart</a>
+                </li>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle footer-links " href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    FAQ
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#about">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Company</a></li>
+                    <li><a class="dropdown-item" href="#services">Experience</a></li>
+                  </ul>
+                <li class="nav-item ">
+                  <a class="nav-link footer-links" href="#">Contact Us</a>
+                </li>
+                </li>
+              </ul>
+            </div>
+
+
+
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+
+            <h3 class="heading-pages">Contact Us</h3>
+
+            <p class="contact-footer">
+              <span class="text-contact"><i class="fa-solid footer-icons fa-location-dot"></i>12th main Road
+                Villivakkam, Chennai</span>
+              <span class="text-contact"><i
+                  class="fa-solid footer-icons fa-envelope"></i>williamtravel14@gmail.com</span>
+              <span class="text-contact"><i class="fa-solid footer-icons fa-phone"></i>+91-6383397840</span>
+            </p>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid gx-0">
+      <div class="footer-rights">
+        <p class="right-para"><i class="fa-solid footer-icons fa-copyright"></i>Copyright Trekking Tales. All Rights
+          Reserved.</p>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

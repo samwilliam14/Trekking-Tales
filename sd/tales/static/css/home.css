@@ -1,0 +1,130 @@
+@media(max-width:1500px){
+    .navbar-container{
+        position: absolute;
+        top: 58px;
+        width: 98%;
+        background-color: #f5efef;
+        padding: 16px 38px;
+        z-index: 55;
+    }
+    .para-content-about{
+        font-size: 14px;
+        text-align: center;
+        line-height: 29px;
+    }
+
+    .packages{
+        width: 100%;
+        height: auto;
+        padding: 16px 0px; 
+    }
+    footer{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width:1500px){
+    .heading-lg-home{
+        font-size: 56px;
+        line-height: 74px;
+    }
+    heading-about::before{
+        content: '';
+        position: absolute;
+        top: 44px;
+        left: 44px;
+    
+    }
+    .heading-about::after{
+        content: '';
+        position: absolute;
+        top: 44px;
+        right: 44px;
+    }
+}
+@media(max-width:992px){
+    
+    .navbar-container{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: #f5efef;
+        padding: 16px 38px;
+        z-index: 55;
+    }
+
+    .navbar-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item{
+        margin: 3px 0px;
+    }
+
+    .heading-lg-home{
+        font-size: 52px;
+        line-height: 80px;
+    }
+
+    .about{
+        width: 100%;
+        height: auto;
+        margin-top: 47px;
+    }
+
+    .heading-about{
+       display: none;
+    }
+    .heading-about::before{
+     display: none;
+    }
+
+    .para-about-details{
+        max-width: 760px;
+        margin: auto;
+    }
+
+    .services{
+        height: auto;
+        width: 100%;
+    }
+    footer .navbar-nav{
+        display: block;
+    }
+
+}
+@media(max-width:768px){
+    .heading-lg-home{
+        font-size: 40px;
+        line-height: 64px;
+    }
+    .img-package{
+        width: 100%;
+        height: 32px;
+    }
+    .para-about-details{
+        max-width: 500px;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .heading_lg{
+        font-size: 35px;
+    }
+}
+@media(max-width:576px){
+    .heading-lg-home{
+        font-size: 30px !important;
+        line-height: 48px
+    }
+    .heading-home{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+}
+

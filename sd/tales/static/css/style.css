@@ -1,0 +1,126 @@
+body {
+  /* background-image: url('{% static "image/layout-1.jpg" %}');
+  background-position: center; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: larger;
+  color: red;
+}
+
+.container {
+  animation: fadeIn 1.5s ease-out;
+}
+
+.custom-bg {
+  background-color: #b2bfcfb2;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add a subtle box shadow for depth */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #bf2b38;
+  /* Darken the color on hover */
+  transition: 0.3s;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.btn-primary {
+  border-radius: 0;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.input-field {
+  border: 1px solid #ced4da;
+  /* Border color */
+  border-radius: 4px;
+  /* Border radius to make it slightly rounded */
+  padding: 8px;
+  /* Padding inside the input field */
+  width: 100%;
+  /* Width of the input field */
+  box-sizing: border-box;
+  /* Include padding and border in the width calculation */
+}
+
+.form-label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.form-control {
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
